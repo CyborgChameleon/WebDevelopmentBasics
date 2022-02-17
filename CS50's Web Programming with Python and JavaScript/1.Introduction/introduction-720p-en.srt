@@ -1,0 +1,172 @@
+0
+00:00:00,000 --> 00:00:02,440
+[PIANO MUSIC PLAYING]
+
+1
+00:00:02,440 --> 00:00:18,372
+
+
+2
+00:00:18,372 --> 00:00:19,580
+DAVID J. MALAN: Hello, world.
+
+3
+00:00:19,580 --> 00:00:23,980
+This is CS50 and this is web programming with Python and JavaScript
+
+4
+00:00:23,980 --> 00:00:26,080
+with CS50's own, Brian Yu.
+
+5
+00:00:26,080 --> 00:00:28,930
+This course picks up where CS50 itself leaves off,
+
+6
+00:00:28,930 --> 00:00:32,380
+diving more deeply into the design and implementation of web apps
+
+7
+00:00:32,380 --> 00:00:35,440
+with Python, JavaScript and SQL using frameworks
+
+8
+00:00:35,440 --> 00:00:38,035
+like Django, React, and Bootstrap.
+
+9
+00:00:38,035 --> 00:00:41,980
+BRIAN YU: We'll start by taking a closer look out HTML and CSS, languages
+
+10
+00:00:41,980 --> 00:00:45,310
+that we can use to describe the structure and the style of web pages.
+
+11
+00:00:45,310 --> 00:00:47,620
+After that, we'll introduce Git, version control
+
+12
+00:00:47,620 --> 00:00:50,770
+tool that we can use to keep track of changes we make to our code,
+
+13
+00:00:50,770 --> 00:00:52,960
+and also to allow multiple people to collaborate
+
+14
+00:00:52,960 --> 00:00:55,240
+on the same project at the same time.
+
+15
+00:00:55,240 --> 00:00:57,212
+After that, we'll dive more deeply into Python
+
+16
+00:00:57,212 --> 00:00:59,920
+exploring some more advanced features of the programming language
+
+17
+00:00:59,920 --> 00:01:01,840
+and, in particular, how we can use it in order
+
+18
+00:01:01,840 --> 00:01:05,650
+to create dynamic web applications using a web framework known as Django.
+
+19
+00:01:05,650 --> 00:01:07,630
+We'll leverage Django, and, in particular,
+
+20
+00:01:07,630 --> 00:01:11,260
+its ability to deal with data, working with SQL, models, and migrations
+
+21
+00:01:11,260 --> 00:01:13,900
+to create web applications that use a database in order
+
+22
+00:01:13,900 --> 00:01:16,600
+to create interactive user experiences.
+
+23
+00:01:16,600 --> 00:01:19,600
+After that, we'll dive more deeply into another programming language--
+
+24
+00:01:19,600 --> 00:01:22,420
+JavaScript-- exploring how we can use JavaScript
+
+25
+00:01:22,420 --> 00:01:26,170
+to create dynamic and interactive user interfaces, writing code that responds
+
+26
+00:01:26,170 --> 00:01:29,110
+to events, and also manipulates a web page in response
+
+27
+00:01:29,110 --> 00:01:31,150
+to some kind of user interaction.
+
+28
+00:01:31,150 --> 00:01:34,190
+After that, we'll explore some best practices in industry,
+
+29
+00:01:34,190 --> 00:01:37,750
+including testing to make sure that our code works as expected, and also
+
+30
+00:01:37,750 --> 00:01:40,150
+continuous integration and continuous delivery
+
+31
+00:01:40,150 --> 00:01:43,630
+to allow us to rapidly make changes and deploy those changes to our code
+
+32
+00:01:43,630 --> 00:01:45,850
+whenever we're able to make those updates.
+
+33
+00:01:45,850 --> 00:01:47,620
+And then, finally, we'll consider concerns
+
+34
+00:01:47,620 --> 00:01:50,770
+around scalability and security as we take our applications
+
+35
+00:01:50,770 --> 00:01:54,250
+and move them from our own computers to the web where anyone can access them.
+
+36
+00:01:54,250 --> 00:01:57,400
+We'll talk about how we make sure that these applications are able to scale
+
+37
+00:01:57,400 --> 00:02:00,330
+and how we're able to make sure that these applications are secure.
+
+38
+00:02:00,330 --> 00:02:02,830
+Along the way, you'll have an opportunity to put all of this
+
+39
+00:02:02,830 --> 00:02:05,800
+into practice by building web applications of your very own.
+
+40
+00:02:05,800 --> 00:02:07,290
+BRIAN YU: This is CS50.
+
+41
+00:02:07,290 --> 00:02:10,040
+[PIANO MUSIC PLAYING]
+
+42
+00:02:10,040 --> 00:02:12,000
+
+

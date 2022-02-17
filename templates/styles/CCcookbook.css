@@ -1,0 +1,20 @@
+*{
+	font-family:arial;
+	
+}
+
+body{
+	background-color:#10250D;
+	margin:0;
+}
+	/* 
+	#4A8043
+	https://www.color-name.com/chameleon-green.color
+	*/
+
+header{
+	background-color:red;
+}
+header:nav{
+	background-color:blue;
+}

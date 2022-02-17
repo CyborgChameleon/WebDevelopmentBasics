@@ -1,0 +1,17 @@
+SETTING UP
+1. make sure recent node.js is installed
+2. follow this instruction https://reactjs.org/docs/create-a-new-react-app.html#create-react-app
+
+
+CREATING REACT FILE
+1. open terminal/command prompt
+2. cd [desired directory]
+3. npx create-react-app [app name (only lower case and hyphen is accepted)]
+
+RUNNING THE APP
+1.npm start
+
+DEPLOYING THE APP
+1.npm run build 
+	(optimizes the app)
+2.
