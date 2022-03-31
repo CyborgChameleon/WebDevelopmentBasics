@@ -1,0 +1,265 @@
+
+
+/*note that in order to link the css to the given section you need to either write 
+the standard tag with no prefixs,
+# for tags that are give an id or
+. for tags that are given a class
+
+everything will be given class for simplicity for best practice use class for css and id for js*/
+
+	.externalExample { /*this is how you comment in css*/
+		color:red; /*color is a property and red is a value*/ 
+		
+	}
+
+
+
+
+
+/*Different Selectors*/
+	p{
+		color:black;
+	}
+
+	#selectByID{
+		color:red;
+	}
+
+	.selectByClass{
+		color:blue;
+	}
+
+	div.selectByClass{
+		color:green;
+	}
+
+	.selectByClass2{
+		background-color:yellow;
+	}
+
+	*{ /*this is universal selector used to assigned to everything*/
+		color:black;
+	}
+
+
+
+/*Adjust Image Display size*/
+	.imgHeight{ 
+		height:100px;
+		/*there's various ways to write the length (use google lol)
+		but this is written in pixel*/
+	}
+
+	.imgWidth{
+		width:75%;
+		/*this is 75% of the screen length*/
+	}
+
+
+
+
+/*Various ways to assign color values*/
+	.assigningColorValues{
+		/*there are 4 ways to refer to a color;
+		-rgb values [rgb (red, green, blue)]
+		-rgba values [rgb (red, green, blue, alpha)]
+		-hex value [#rrggbb]
+		-hsl value [hsl(hue, saturation, lightness)]
+		-hsla value [hsl(hue, saturation, lightness, alpha)]
+		-color names*/
+		
+		
+		
+		background-color:rgba(255,0,0,1); 
+		/*first 3 value ranges from 0 to 255 
+		while the alpha/last value ranges from 0 to 1 meaning 0=complete transparency*/
+		
+		border:5px solid;
+		/*a size and type should be indicated otherwise it will assume it's 0px and invisible
+		more details in borderMarginPadding div*/
+		border-color: #00ff00;
+		/*the value ranges from 0 to 9 before continuing from a to f */
+			
+	}		
+
+	p.assigningColorValues{
+		
+		
+		background-color:hsla(240,100%,50%,.5);
+		/*hue goes between 0 to 359/360
+		saturation goes from 0 to 100 where 100 is the most saturated color
+		lightness goes between 0 to 100 where 0=black and 100=white
+		alpha is from 0 to 1*/
+		
+		/*Since I set the color here blue 
+		and the background color behing the paragraph is red 
+		the result should be purple*/
+		
+		
+		color:chocolate;/*text color*/
+		/*as of aug 9 2021 html support 140 color names
+		https://www.w3schools.com/colors/colors_names.asp */
+		
+		font-family:verdana;
+		font-size:125%;
+	}	
+
+
+
+
+/*Adjusting background color or wallpaper*/
+	.background-color{
+		background-color:yellow;
+	}
+
+	.opacity{
+		opacity:.5; /*0=clear, 1=solid color*/
+	}
+
+	.background-image{
+		background-image:url("examples/R.gif"); /*put the image link or directory within the quotation marks*/
+	}
+	
+	.backgroundRepeatDefault{
+		background-image:url("examples/R.gif");
+	}
+	
+	.backgroundRepeatX{
+		background-image:url("examples/R.gif");
+		background-repeat: repeat-x;
+	}
+
+	.backgroundRepeatY{
+		background-image:url("examples/R.gif");
+		background-repeat: repeat-y;
+	}
+
+	.backgroundNoRepeat{
+		background-image:url("examples/R.gif");
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+
+	.background-attachment{
+		background-image:url("examples/R.gif");
+		background-attachment: fixed;
+	}
+	.background-shorthand{
+		background: url("examples/R.gif") no-repeat center center scroll; /*note that the values are seperated by space*/
+	}
+
+
+.colgroupWeekday{
+ background-color: #D6EEEE;
+}
+.colgroupWeekend{
+ background-color: #eedddd;
+}
+
+
+.solid{
+	border-style:solid;
+}
+.dotted{
+	border-style:dotted;
+}
+.dashed{
+	border-style:dashed;
+}
+.double{
+	border-style:double;
+}
+.groove{
+	border-style:groove;
+}
+.ridge{
+	border-style:ridge;
+}
+.inset{
+	border-style:inset;
+}
+.outset{
+	border-style:outset;
+}
+.none{
+	border-style:none;
+}
+.hidden{
+	border-style:hidden;
+}
+.fourValues{
+	border-style:solid dotted dashed double;
+}
+.threeValues{
+	border-style:solid dotted double;
+}
+.twoValues{
+	border-style:solid dotted;
+}
+
+.borderWidthpixel{
+	border-style:solid;
+	border-width:5px;
+}
+.borderWidthThin{
+	border-style:solid;
+	border-width:thin;
+}
+.borderWidthMedium{
+	border-style:solid;
+	border-width:medium;
+}
+.borderWidthThick{
+	border-style:solid;
+	border-width:thick;
+}
+.transparentBorder{
+	border-style:solid;
+	border-color:transparent;
+}
+.redBorder{
+	border-style:solid;
+	border-color:red;
+}
+.topBorder{
+  border-top-style: solid;
+}
+.rightBorder{
+  border-right-style: solid;
+}
+.bottomBorder{
+  border-bottom-style: solid;
+}
+.leftBorder{
+  border-left-style: solid;
+}
+.roundedBorder{
+	border:solid;
+	border-radius:5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.borderMarginPadding{
+	
+	/*note that whenever you see ##px it can also e replaced with 
+	##% (percentage to whole screen???), 
+	##px (pixel size)
+	... more to come
+	/*more details to come*/
+	/* this can also work with paragraph not just div*/
+	background-color: yellow;
+	
+	padding: 30px;
+	border: 2px solid black;
+	margin: 50px;
+	/*more details to add*/
+}
