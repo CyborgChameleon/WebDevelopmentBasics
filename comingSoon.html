@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      	<title>CyborgChameleon</title>
+      	<link rel="stylesheet" id="cssFileUpdate"> 
+	  	<!-- this part is taken care of in script 
+		so we dont always need to make a new code to find the css file -->
+  </head>
+
+    <body>
+		<header>
+			<div id="logo">CYBORG CHAMELEON</a></div>
+			<ul id="headerNavigationDirectory"></ul>
+		</header>
+		<section>
+			<nav><ul id="sideNavigationDirectory"></ul></nav>
+			<main>
+				<article>
+					COMING SOON
+				</article>
+			</main>
+			<aside>
+				
+			</aside>
+		</section>
+
+		<footer id="footer"></footer>
+		
+		<script type="module" id="jsFileUpdate"></script>	
+		<!-- this part is taken care of in script 
+		so we dont always need to make a new code to find the js file -->
+
+		<script>
+			// this will allow you to find the javascript file no matter where you put the html file
+			let oneFolderUp="../";
+			let subLvlFromRoot;
+			if (parent.window.location.href.indexOf("github")==-1){
+				subLvlFromRoot=parent.window.location.href.split("/").length-4;
+			}else{
+				subLvlFromRoot=parent.window.location.href.split("/").length-5;
+			};
+			document.getElementById("jsFileUpdate").setAttribute("src",oneFolderUp.repeat(subLvlFromRoot)+"./js/navigation.js");
+		</script>
+    </body>
+
+</html>

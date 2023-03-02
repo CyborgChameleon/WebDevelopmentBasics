@@ -1,0 +1,100 @@
+{
+    
+    "headerNavigationList":[
+        {
+            "title" : "HTML",
+            "location":"Pages/HTML/html.html"
+        },
+        {
+            "title" : "CSS",
+            "location":"comingSoon.html"
+            
+        },
+        {
+            "title" : "JS",
+            "location":"comingSoon.html"
+            
+            
+        },
+        
+        {
+            "title":"Documents and Specifications",
+            "location":"comingSoon.html"
+        }
+        
+    ],
+    
+    
+    "sideNavigationList":[
+        
+        {
+            "title" : "HyperText Markup Language (HTML)",
+            "location":"Pages/HTML/html.html",
+            "parent":"main"
+
+        },
+        {
+            "title" : "HTML texts and text manipulations",
+            "location":"Pages/HTML/texts.html",
+            "parent":"HyperText Markup Language (HTML)"
+        },
+        {
+            "title" : "HTML layouts",
+            "location":"Pages/HTML/layouts.html",
+            "parent":"HyperText Markup Language (HTML)"
+        },
+        {
+            "title" : "CSS",
+            "location":"comingSoon.html"
+            
+            
+        },
+        {
+            "title" : "JS",
+            "location":"comingSoon.html"
+            
+            
+        },
+        {
+            "title" : "JSON???",
+            "location":"comingSoon.html"
+            
+            
+        },
+        {
+            "title" : "API???",
+            "location":"comingSoon.html"
+            
+            
+        },
+        {
+            "title":"Documents and Specifications",
+            "location":"comingSoon.html"
+        },
+        {
+            "title" : "Next step",
+            "location":"comingSoon.html"
+            
+            
+        }
+    ],
+    "footerNavigationList":[
+        {
+            "title" : "Web Development With Various FrameWorks(Coming)",
+            "location":"comingSoon.html"
+        },
+        {
+            "title" : "Game Development (Coming Soon)",
+            "location":"comingSoon.html"
+        },
+        {
+            "title" : "More Coming Soon",
+            "location":"comingSoon.html"
+        }
+    ]
+
+    
+
+    
+    
+}

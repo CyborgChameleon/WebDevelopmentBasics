@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      	<title>HTML</title>
+      	<link rel="stylesheet" id="cssFileUpdate"> 
+	  	<!-- this part is taken care of in script 
+		so we dont always need to make a new code to find the css file -->
+  </head>
+
+  <body>
+    <header>
+        <div id="logo">CYBORG CHAMELEON</a></div>
+        <ul id="headerNavigationDirectory"></ul>
+    </header>
+		<section>
+			<nav><ul id="sideNavigationDirectory"></ul></nav>
+			<main>
+				<article>
+                    <div>
+                        <h1>Introduction to HTML</h1>
+                        <p>
+                            HTML is an abbreviation of HyperText Markup Language. 
+                            It's a set of instruction given to web browsers to render the pages.
+                            It's often used a skeleton of the website. 
+                            It's used to determine what text, images, sections 
+                            is included in the website page. 
+                            It's also used to organize the contents.
+                        </p>
+                    </div>
+                    <div>
+                        
+                        <h1>HTML Files</h1>
+                        <p>
+                            All html files have the extension of .html. 
+                            You can create them by creating a text file 
+                            and then change .txt extension to .html extension.
+                            You can also start by opening a text editor or an ide 
+                            and then save the files as an html file.
+                            
+                        </p>
+                    </div>
+                    <div>
+                        <h1>Setting up HTML files</h1>
+                        <p>
+                            There are some necessary tags that needs to be put in every html files.
+                            html tag 
+                            head tag
+                            body tag
+                        </p>
+                        <h2>Good Practice</h2>
+                        <p> 
+                            add doctype tag 
+                            
+                        </p>
+
+                    </div>
+					
+				</article>
+			</main>
+			<aside>
+				
+			</aside>
+		</section>
+
+		<footer id="footer"></footer>
+		
+		<script type="module" id="jsFileUpdate"></script>	
+		<!-- this part is taken care of in script 
+		so we dont always need to make a new code to find the js file -->
+
+		<script>
+			// this will allow you to find the javascript file no matter where you put the html file
+			let oneFolderUp="../";
+			let subLvlFromRoot;
+			if (parent.window.location.href.indexOf("github")==-1){
+				subLvlFromRoot=parent.window.location.href.split("/").length-4;
+			}else{
+				subLvlFromRoot=parent.window.location.href.split("/").length-5;
+			};
+			document.getElementById("jsFileUpdate").setAttribute("src",oneFolderUp.repeat(subLvlFromRoot)+"./js/navigation.js");
+		</script>
+  </body>
+
+</html>

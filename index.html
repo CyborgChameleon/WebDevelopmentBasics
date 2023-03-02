@@ -1,49 +1,25 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Basic Web Dev</title>
-        <link rel="stylesheet" href="css/style.css" >
-    </head>
-    <body>
-        <header>
-            <div class="logo"><a href="https://cyborgchameleon.github.io/LifeBlog/">
-                CYBORG CHAMELEON</a></div>
-                
-            <ul>
-                <li>My Life Blog</li>
-                <li>Fitness</li>
-                <li>
-                    Coding
-                    <ul>
-                        <li>Web Development</li>
-                        <li>Game Development</li>
-                        <li>coming soon</li>
-                    </ul>
-                </li>
-                <li>Self Improvement</li>
-            </ul>
-        </header>
-        <section>
+  <head>
+      <title>CyborgChameleon</title>
+      <link rel="stylesheet" id="cssFileUpdate">
+  </head>
 
-        
-            <nav>
-                <ul>
-                    <li>Learning Web Development</li>
-                    <li>My current progresses and projects</li>
-                    <li>Templates and Examples</li>
-                </ul>
-                
-                
-
-            </nav>
-            <main>
-                <article>
-                    <h3>Learning Web Development</h3>
+  <body>
+		<header>
+            <div id="logo">CYBORG CHAMELEON</a></div>
+			<ul id="headerNavigationDirectory"></ul>
+		</header>
+		<section>
+			<nav><ul id="sideNavigationDirectory"></ul></nav>
+			<main>
+				<article>
+					<h3>Learning Web Development</h3>
                     <p>Hi folks!</p>
                     <p>
                         This is CyborgChameleon! 
                         I know that learning web development is a confusing world.
-                        However I tried to research with my best 
+                        However, I tried to research with my best 
                         to find the best learning path and learn to make websites.
                         You can find all of my notes and inspirations 
                         and recomended websites to follow here. 
@@ -54,36 +30,63 @@
                     
                     <p>Happy Coding!</p>   
                     <p>-CyborgChameleon</p>
-            </article>
-            
-            <!--
+                </article>
+                <article>
+                    <h3>
+                        My Suggested Learning Path for WebDevelopment (prone to changes)
+                    </h3>
+                    <h4>Prologue</h4>
+                    <p>
+                        Take a look here to see how does one navigate the complex web dev <br>
+                        <a href="https://www.w3schools.com/whatis/">https://www.w3schools.com/whatis/</a><br>
+                        don't hestitate to take a look at <a href="https://www.w3schools.com/whatis/whatis_http.asp">What Is HTTP</a>
+                    </p>
+                    <h4>Part 1 basics of html, css and js</h4>
+                    <p>
+                        follow the  mozilla's tutorial  while using 
+                        devoloper's version of html specification<br>
+                        <a href="https://developer.mozilla.org/"> 
+                        https://developer.mozilla.org/</a><br>
+                        <i>but if you're overwhelmed by the amount of reading
+                        you can learn from the following link instead
+                        but be wary that this link is a lil bit outdated<br>
+                        <a href="https://www.w3schools.com/"> 
+                        https://www.w3schools.com/</a></i>
+                        <br><br>
+                        There's a list of tags for you click on and read the details<br>
+                        <a href="https://html.spec.whatwg.org/dev/dom.html#flow-content">
+                        https://html.spec.whatwg.org/dev/dom.html#flow-content</a>
+                    </p>
 
-         
-<h3>
-    My Suggested Learning Path for WebDevelopment(prone to changes)
-</h3>
-<h4>Prologue</h4>
-<p>
-    Take a look here to see how does one navigate the complex web dev <br>
-    <a href="https://www.w3schools.com/whatis/">https://www.w3schools.com/whatis/</a><br>
-    don't hestitate to take a look at <a href="https://www.w3schools.com/whatis/whatis_http.asp">What Is HTTP</a>
-</p>
-<h4>Part 1 basics of html, css and js</h4>
-<p>
-    follow the  mozilla's tutorial  while using 
-    devoloper's version of html specification<br>
-    <a href="https://developer.mozilla.org/"> 
-    https://developer.mozilla.org/</a><br>
-    <i>but if you're overwhelmed by the amount of reading
-    you can learn from the following link instead
-    but be wary that this link is a lil bit outdated<br>
-    <a href="https://www.w3schools.com/"> 
-    https://www.w3schools.com/</a></i>
-    <br><br>
-    There's a list of tags for you click on and read the details<br>
-    <a href="https://html.spec.whatwg.org/dev/dom.html#flow-content">
-    https://html.spec.whatwg.org/dev/dom.html#flow-content</a>
-</p>
+                </article>
+			</main>
+			<aside>
+				
+			</aside>
+		</section>
+
+		<footer id="footer"></footer>
+		
+		<script type="module" id="jsFileUpdate"></script>	
+
+		<script>
+			
+			let oneFolderUp="../";
+			let subLvlFromRoot;
+			if (parent.window.location.href.indexOf("github")==-1){
+				subLvlFromRoot=parent.window.location.href.split("/").length-4;
+			}else{
+				subLvlFromRoot=parent.window.location.href.split("/").length-5;
+			};
+			document.getElementById("jsFileUpdate").setAttribute("src",oneFolderUp.repeat(subLvlFromRoot)+"js/navigation.js");
+		</script>
+  </body>
+
+</html>
+<!-- 
+
+  
+
 
 
 <p>my current progress:</p>
@@ -93,26 +96,6 @@ https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_Ja
 <a href="./">Folder directory</a>
 
 
-
-
--->
-
-            
-            
-            
-            </main>
-            
-
-            <aside>
-
-            </aside>
-        </section>
-    </body>
-</html>
-
-
-
-<!--
 
 
 -----------------------------------------------------------------------------------------------------------------------------

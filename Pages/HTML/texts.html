@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      	<title>CyborgChameleon</title>
+      	<link rel="stylesheet" id="cssFileUpdate"> 
+	  	<!-- this part is taken care of in script 
+		so we dont always need to make a new code to find the css file -->
+  </head>
+
+    <body>
+		<header>
+			<div id="logo">CYBORG CHAMELEON</a></div>
+			<ul id="headerNavigationDirectory"></ul>
+		</header>
+		<section>
+			<nav><ul id="sideNavigationDirectory"></ul></nav>
+			<main>
+				<article>
+					<h1>Texts and Text manipulations</h1>
+                   
+                    <div id="headers">
+                        <h3>Headers </h3>
+                        <p>
+                            There are various ways to organize and manipulate the texts
+                            to make it easier for the users to read.
+                            Let's say I want to make a title of the article, 
+                            I can use the &lt;h1&gt; up to &lt;h6&gt; tags 
+                            to make various large texts on your page. 
+                            &lt;h1&gt; tag is the largest one though.
+                        </p>
+                        
+                        <div class="showcase">
+                            This is &lt;h1&gt; tag
+                            <h1>Header 1</h1> 
+                            
+                            This is &lt;h2&gt; tag
+                            <h2>Header 2</h2>
+                            
+                            This is &lt;h3&gt; tag
+                            <h3>Header 3</h3>
+                        
+                            This is &lt;h4&gt; tag
+                            <h4>Header 4</h4>
+                            
+                            This is &lt;h5&gt; tag
+                            <h5>Header 5</h5>
+                            
+                            This is &lt;h6&gt; tag
+                            <h6>Header 6</h6>
+                        </div>
+                        <hr><br>
+                    </div>
+
+                    <div id="newLines">
+                        <h3>New lines </h3>
+                        <div class="showcase">
+                            You can break to  <br>
+                            a new line <br>
+                            with &lt;br&gt; tag<br>
+                            <br>
+                            or <br>
+                            <br>
+                            You can make <hr>
+                            a horizontal line <hr>
+                            with &lt;hr&gt; tag<hr>
+    
+                        </div>
+                        <hr><br>
+                    </div>
+                        
+                    <div id="textStyles">
+                        <h3>Text Styles</h3>
+                        <p>
+                            If you want to make it clear on 
+                            which words to focus on. You can 
+                        </p>
+                        <div class="showcase">
+                            You can make it 
+                            <b>bold</b>			 
+                            which can also be done with
+                            <strong>strong tag</strong>
+                            <br><br>
+                            You can make it 
+                            <i>italicized</i>	
+                            which can also be done with
+                            <em>emphasized tag</em>
+                            <br><br>
+                            You can also <mark>highlight</mark> a text
+                            or <del>crossed out</del> a text.
+                            <br><br>
+                            You can also <ins> insert or underline</ins> something.
+                            <br><br>                            
+                            You can also make a text 
+                            <small>smaller</small> and 
+                            <small><small>smaller</small></small> and
+                            <small><small><small>smaller</small></small></small>.
+                            <br><br>
+                            You can also <sub>sub</sub>script or <sup>super</sup>script a text.
+                        </div>
+                        <hr><br>
+                    </div>
+
+                    
+                    <div id="">
+                        <h3></h3>
+                        <div class="showcase">
+
+                        </div>
+                        <hr><br>
+                    </div>
+                        
+                        
+                        
+                        
+                       
+
+
+				</article>
+			</main>
+			<aside>
+				
+			</aside>
+		</section>
+
+		<footer id="footer"></footer>
+		
+		<script type="module" id="jsFileUpdate"></script>	
+		<!-- this part is taken care of in script 
+		so we dont always need to make a new code to find the js file -->
+
+		<script>
+			// this will allow you to find the javascript file no matter where you put the html file
+			let oneFolderUp="../";
+			let subLvlFromRoot;
+			if (parent.window.location.href.indexOf("github")==-1){
+				subLvlFromRoot=parent.window.location.href.split("/").length-4;
+			}else{
+				subLvlFromRoot=parent.window.location.href.split("/").length-5;
+			};
+			document.getElementById("jsFileUpdate").setAttribute("src",oneFolderUp.repeat(subLvlFromRoot)+"./js/navigation.js");
+		</script>
+    </body>
+
+</html>
